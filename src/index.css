@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-cream: #FAF7F2;
+  --color-charcoal: #2B2A28;
+  --color-sage: #4F6F55;
+  --color-terracotta: #A8552F;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF7F2;
+  color: #2B2A28;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Accessible focus visible default across all interactive elements */
+:focus-visible {
+  outline: 2px solid #4F6F55;
+  outline-offset: 3px;
+}
