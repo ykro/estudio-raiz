@@ -45,7 +45,7 @@ export const Schedule: React.FC = () => {
           <div className="lg:col-span-8">
             {/* Day Tabs with Arrow Key Navigation */}
             <div
-              className="flex items-center gap-1.5 sm:gap-2 pb-4 border-b border-[#E7E2D8] overflow-x-auto no-scrollbar"
+              className="flex items-center gap-1 sm:gap-2 pb-4 border-b border-[#E7E2D8] overflow-x-auto no-scrollbar"
               role="tablist"
               aria-label="Días de la semana para el horario de clases"
             >
@@ -65,7 +65,7 @@ export const Schedule: React.FC = () => {
                     tabIndex={isActive ? 0 : -1}
                     onClick={() => setSelectedDay(day.id)}
                     onKeyDown={(e) => handleTabKeyDown(e, idx)}
-                    className={`min-h-[44px] min-w-[44px] px-4.5 py-2.5 rounded-full text-sm font-medium transition-all cursor-pointer whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#4F6F55] focus-visible:ring-offset-2 focus-visible:ring-offset-[#FAF7F2] ${
+                    className={`min-h-[44px] min-w-[44px] px-3.5 sm:px-4.5 py-2.5 rounded-full text-sm font-medium transition-all cursor-pointer whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#4F6F55] focus-visible:ring-offset-2 focus-visible:ring-offset-[#FAF7F2] ${
                       isActive
                         ? 'bg-[#4F6F55] text-white shadow-xs'
                         : 'text-[#2B2A28] hover:bg-[#E7E2D8]/60'
